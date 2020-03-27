@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML W3Schools</title>
+</head>
+<body>
+
+Definindo uma tabela HTML
+
+Uma tabela HTML é definida com a <table>tag
+Cada linha da tabela é definida com a <tr>tag Um cabeçalho da tabela é definido com a <th> tag Por padrão, 
+os títulos das tabelas estão em negrito e centralizados. Os dados / célula da tabela são definidos com a <td> tag
+
+    Exemplo:
+<table style="width:100%">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+
+Tabela HTML - Bordas recolhidas
+
+Se você deseja que as bordas colapsem em uma borda, adicione a border-collapse propriedade CSS :
+
+Exemplo:
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+
+Tabela HTML - Adicionando preenchimento de célula
+
+O preenchimento de célula especifica o espaço entre o conteúdo da célula e suas bordas.
+Se você não especificar um preenchimento, as células da tabela serão exibidas sem preenchimento.
+Para definir o preenchimento, use a padding propriedade CSS :
+
+Exemplo
+th, td {
+padding: 15px;
+}
+
+Tabela HTML - Cabeçalhos de alinhamento à esquerda
+
+Por padrão, os títulos das tabelas estão em negrito e centralizados.
+Para alinhar à esquerda os títulos da tabela, use a text-alignpropriedade CSS :
+
+Exemplo
+th {
+  text-align: left;
+}
+
+Tabela HTML - Adicionando espaçamento de borda
+
+O espaçamento da borda especifica o espaço entre as células.
+Para definir o espaçamento da borda de uma tabela, use a border-spacingpropriedade CSS :
+
+Exemplo
+table {
+  border-spacing: 5px;
+}
+
+Tabela HTML - Células que abrangem muitas colunas
+
+Para fazer uma célula abranger mais de uma coluna, use o colspan atributo:
+
+Exemplo
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Telephone</th>
+  </tr>
+  <tr>
+    <td>Bill Gates</td>
+    <td>55577854</td>
+    <td>55577855</td>
+  </tr>
+</table>
+
+Tabela HTML - Células que abrangem muitas linhas
+
+Para fazer uma célula abranger mais de uma linha, use o rowspanatributo:
+
+Exemplo
+<table style="width:100%">
+  <tr>
+    <th>Name:</th>
+    <td>Bill Gates</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Telephone:</th>
+    <td>55577854</td>
+  </tr>
+  <tr>
+    <td>55577855</td>
+  </tr>
+</table>
+
+
+Tabela HTML - Adicionando uma legenda
+
+Para adicionar uma legenda a uma tabela, use a <caption>tag:
+
+Exemplo
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+
+Um estilo especial para uma mesa
+
+Para definir um estilo especial para uma tabela especial, adicione um id atributo à tabela:
+
+Exemplo
+<table id="t01">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+Agora você pode definir um estilo especial para esta tabela:
+
+table#t01 {
+  width: 100%;
+  background-color: #f1f1c1;
+}
+
+E adicione mais estilos:
+
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
+table#t01 th {
+  color: white;
+  background-color: black;
+}
+
+
+
+Resumo do capítulo
+
+Use o <table>elemento HTML para definir uma tabela
+Use o <tr>elemento HTML para definir uma linha da tabela
+Use o <td>elemento HTML para definir os dados da tabela
+Use o <th>elemento HTML para definir um cabeçalho da tabela
+Use o <caption>elemento HTML para definir uma legenda da tabela
+Use a borderpropriedade CSS para definir uma borda
+Use a border-collapsepropriedade CSS para recolher as bordas das células
+Use a paddingpropriedade CSS para adicionar preenchimento às células
+Use a text-alignpropriedade CSS para alinhar o texto da célula
+Use a border-spacingpropriedade CSS para definir o espaçamento entre células
+Use o colspanatributo para fazer uma célula abranger muitas colunas
+Use o rowspanatributo para fazer uma célula se estender por muitas linhas
+Use o idatributo para definir exclusivamente uma tabela
+
+</body>
+</html>

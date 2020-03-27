@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML W3Schools</title>
+</head>
+<body>
+
+Mapas de imagem
+A <map>tag define um mapa de imagem. Um mapa de imagem é uma imagem com áreas clicáveis.
+
+Exemplo
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+Como funciona?
+A ideia por trás de um mapa de imagem é que você possa executar ações diferentes, dependendo da localização da imagem em que clicar.
+Para criar um mapa de imagem, você precisa de uma imagem e de um mapa contendo algumas regras que descrevam as áreas clicáveis.
+
+A IMAGEM
+A imagem é inserida usando a <img> tag. A única diferença de outras imagens é que você deve adicionar um usemap atributo:
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+O usemap valor começa com uma marca de hash # seguida pelo nome do mapa da imagem e é usado para criar um relacionamento entre a imagem e o mapa da imagem.
+
+O MAPA
+Em seguida, adicione um <map>elemento.
+O <map> elemento é usado para criar um mapa de imagem e é vinculado à imagem usando o name atributo:
+<map name="workmap">
+O name atributo deve ter o mesmo valor que o usemap atributo.
+
+
+As ÁREAS
+Em seguida, adicione as áreas clicáveis.
+Uma área clicável é definida usando um <area> elemento.
+
+Forma
+Você deve definir a forma da área e escolher um destes valores:
+rect - define uma região retangular
+circle - define uma região circular
+poly - define uma região poligonal
+default - define toda a região
+
+
+COORDENADAS
+Você deve definir algumas coordenadas para poder colocar a área clicável na imagem.
+As coordenadas vêm em pares, uma para o eixo x e outra para o eixo y.
+As coordenadas 34, 44 estão localizadas 34 pixels da margem esquerda e 44 pixels da parte superior:
+As coordenadas 270, 350 estão localizadas 270 pixels da margem esquerda e 350 pixels da parte superior:
+Agora você tem dados suficientes para criar uma área retangular clicável:
+
+<area shape="rect" coords="34, 44, 270, 350" href="computer.htm">
+
+Círculo
+Para adicionar uma área do círculo, localize primeiro as coordenadas do centro do círculo:
+337, 300
+
+Em seguida, especifique o raio do círculo:
+44 píxeis
+
+Agora você tem dados suficientes para criar uma área circular clicável:
+<area shape="circle" coords="337, 300, 44" href="coffee.htm">
+
+
+Mapa de imagem e JavaScript
+
+Uma área clicável não precisa ser um link para outra página; também pode disparar uma função JavaScript.
+Adicione um clickevento no <area> elemento para executar uma função JavaScript:
+
+Exemplo
+Você pode usar o onclick atributo para executar uma função JavaScript quando a área é clicada
+
+<area shape="circle" coords="337,300,44" onclick="myFunction()">
+
+
+Resumo do capítulo
+Use o <map>elemento HTML para definir um mapa de imagem
+Use o <area>elemento HTML para definir as áreas clicáveis ​​no mapa de imagem
+Use o atributo de <img>elemento do HTML usemappara apontar para um mapa de imagem
+
+</body>
+</html>

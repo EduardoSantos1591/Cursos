@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- keydown() - acionado no momento em que uma tecla é pressionada (soltando-a ou não)-->
+    <!-- keypress() - acionado no momento em que uma tecla é pressionada (soltando-a ou não) porem não captura todas as  teclas, como por exemplo : alt, ctrl, esc, shift, etc-->
+    <!-- keyup() - acionado no momento em que a tecla é liberada-->
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('#input1').keydown(function () {
+
+                alert('Botão foi pressionado')
+
+            });
+
+        });
+
+        $(document).ready(function () {
+
+            $('#input2').keypress(function () {
+
+                alert('Botão foi pressionado')
+
+            });
+
+        });
+
+        $(document).ready(function () {
+
+            $('#input3').keyup(function () {
+
+                alert('Botão foi liberado')
+
+            });
+
+        });
+
+
+    </script>
+
+</head>
+<body>
+
+    <input id="input1" type="text">
+    <input id="input2" type="text">
+    <input id="input3" type="text">
+
+</body>
+</html>

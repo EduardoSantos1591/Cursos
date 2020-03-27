@@ -1,0 +1,88 @@
+    É necessário baixar o node js e o yarn.
+
+    Entrar com o cmd na raiz do projeto e executar : yarn init e apertar enter para todas as perguntas,
+    com isso ira ser criado um arquivo package.json na raiz do projeto,
+    esse arquivo vai armazenar as informações de dependencias dessa aplicação.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    Instalar dependencias para trabalhar com a interface de linha de comando do Babel
+    yarn add @babel/cli
+
+    Cria um arquivo yarn.lock que você nunca precisará mexer pois é uma forma de cache do yarn.
+    Também cria uma pasta chamada node_modules que ira armazenar todas as dependencias do nosso projeto
+    yarn add @babel/preset-env
+    yarn add @babel/core
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    Caso use o git criar .gitignore e digitar: node_modules/
+
+    Criar na raiz do projeto .babelrc e digitar:
+
+    {
+        "presets": ["@babel/preset-env"]
+    }
+
+    O babel possui muitos presets, o preset-env vai entender qual é o ambiente que nós estamos trabalhando,
+    e ira converter as features do ES6 para que não importa o ambiente ele vai converter o código da melhor forma possivel.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    Criar na raiz do projeto index.html e main.js
+
+    No package.json criar uma nova propriedade chamada scripts:
+
+    "scripts": {
+        "dev": "babel ./main.js -o ./bundle.js"
+    }
+
+    Estes scripts são formas de executar comandos pelo terminal.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    Apos isso execute o comando "dev" no termi al com isso o babel pega o código do nosso main.js 
+    e converte no bundle.js de maneira que todos os navegadores consigam entender
+
+    Agora vamos passar uma nova propriedade para o babel chamada -w
+
+    "scripts": {
+        "dev": "babel ./main.js -o ./bundle.js -w"
+    }
+
+    Execute novamente o "dev".
+    Esta propriedade -w faz com que quando ocorra qualquer alteração nesse arquivo
+    ele automaticamente ja faz o processo de bundle e gera o arquivo para os navegadores
+    consigam entender.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    Dentro de main.js criar a classe TodoList: (pode apagar a outra)
+
+    class TodoList{
+        constructor(){
+            this.todos = [];
+        }
+    
+        addTodo(){
+            this.todos.push('Novo Todo');
+            console.log(this.todos);
+        }
+    }
+
+    O metodo constructor que vai ser o primeiro metodo executado toda vez que agente instanciar uma nova classe.
+    Nele podemos fazer ações que disparam quando o objeto é criado ou iniciar variaveis.
+    
+    Para testar crie no index um button com um id e um texto.
+
+    Após isso na main nos devemos instanciar a classe:
+    
+    const MinhaLista = new TodoList();
+
+    document.getElementById('novotodo').onclick = function(){
+        MinhaLista.addTodo();
+    }
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- click() - acionado no clique do mouse-->
+    <!-- dblclick() - acionado no clique duplo do mouse-->
+    <!-- mousedown() - acionado no clique do mouse (soltando ou não o botão)-->
+    <!-- mouseover() - acionado quando o cursor do mouse sobrepõe o elemento da página-->
+    <!-- mouseout() - acionado quando o cursor do mouse sai da área de um elemento da página -->
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $('#div1').click(function () {
+
+                alert('elemento foi clicado')
+
+            });
+
+        });
+
+        $(document).ready(function () {
+
+            $('#div2').dblclick(function () {
+
+                alert('elemento foi clicado duas vezes')
+
+            });
+
+        });
+
+        $(document).ready(function () {
+
+            $('#div3').mousedown(function () {
+
+                alert('elemento foi clicado clicado')
+
+            });
+
+        });
+
+        $(document).ready(function () {
+
+            $('#div4').mouseover(function () {
+
+                alert('elemento foi sobreposto')
+
+            });
+
+        });
+
+        $(document).ready(function () {
+
+            $('#div5').mouseout(function () {
+
+                alert('Mouse saiu da área do elemento')
+
+            });
+
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <div id="div1" style="height: 150px; width: 150px; background: #3390FF; margin-top: 15px"> <p class="text-center">DIV1</p> </div>
+    <div id="div2" style="height: 150px; width: 150px; background: #3390FF; margin-top: 15px"> <p class="text-center">DIV2</p> </div>
+    <div id="div3" style="height: 150px; width: 150px; background: #3390FF; margin-top: 15px"> <p class="text-center">DIV3</p> </div>
+    <div id="div4" style="height: 150px; width: 150px; background: #3390FF; margin-top: 15px"> <p class="text-center">DIV4</p> </div>
+    <div id="div5" style="height: 150px; width: 150px; background: #3390FF; margin-top: 15px"> <p class="text-center">DIV5</p> </div>
+
+</body>
+</html>

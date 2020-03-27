@@ -1,0 +1,14 @@
+input::placeholder{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.img-up{
+    padding-bottom: 130px;
+}
+
+#td1{
+    color: #CB1717;
+    font-size: 30px ;
+}

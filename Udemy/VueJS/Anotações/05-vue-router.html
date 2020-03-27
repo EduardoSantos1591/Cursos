@@ -1,0 +1,48 @@
+Este é um sistema de rotas mais robusto e recomendado pela propria equipe do vue-js
+
+
+Instalar:
+npm install vue-router
+
+Depois importar: 
+
+import VueRouter from 'vue-router'
+Vue.use (VueRouter)
+
+Colocar a seguinte tag dentro do html em que a div tem o Id = App (index.html)
+
+<router-view></router-view>
+
+Depois dentro da main.js :
+
+const routes = [
+  { path: '/', component: Home },
+  { path: '/contato', component: Contato}
+]
+
+const router = new VueRouter({
+    routes
+})
+
+Substituir a : 
+
+new Vue({
+    el: '#app',
+    data:{
+      rotaAtual: window.location.pathname
+    },
+  
+    computed:{
+      exibeComponente (){
+        return rotas[this.rotaAtual] || SemPagina
+      }
+    },
+  
+    render (h) { return h(this.exibeComponente)}
+  })
+
+Por: 
+
+const app = new Vue({
+    router
+  }).$mount('#app')

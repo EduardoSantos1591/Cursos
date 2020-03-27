@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML W3Schools</title>
+</head>
+<body>
+
+fundo de repetição
+Se a imagem de plano de fundo for menor que o elemento, a imagem se repetirá horizontal e verticalmente até chegar ao final do elemento.
+
+A background-image propriedade tentará preencher o elemento div com imagens até chegar ao fim.
+
+<!--
+<style>
+    body {
+        background-image: url('example_img_girl.jpg');
+    }
+</style>
+-->
+Exemplo
+
+
+Para evitar que a imagem de segundo plano se repita, use a background-repeat propriedade
+
+Exemplo
+<!--
+<style>
+    body {
+        background-image: url('example_img_girl.jpg');
+        background-repeat: no-repeat;
+    }
+</style>
+-->
+
+Capa de fundo
+
+Se você deseja que a imagem de plano de fundo cubra todo o elemento, é possível definir a background-sizepropriedade como cover.
+Além disso, para garantir que todo o elemento esteja sempre coberto, defina a propriedade de anexo em segundo plano como fixa:
+Como você pode ver, a imagem cobrirá todo o elemento, sem alongamento, a imagem manterá suas proporções originais.
+
+Exemplo
+<!--
+<style>
+    body {
+        background-image: url('img_girl.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+-->
+
+Alongamento em segundo plano
+
+Se você deseja que a imagem de fundo seja esticada para caber na imagem inteira no elemento, é possível definir a background-sizepropriedade para 100% 100%:
+Tente redimensionar a janela do navegador e você verá que a imagem será esticada, mas sempre cubra todo o elemento.
+<!--
+<style>
+    body {
+        background-image: url('img_girl.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
+-->
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML W3Schools</title>
+</head>
+<body>
+
+Usando o atributo classe em JavaScript
+O nome da classe também pode ser usada por JavaScript para executar determinadas tarefas para elementos com o nome da classe especificada.
+
+JavaScript pode acessar elementos com um nome de classe especificado usando o getElementsByClassName()método:
+
+Exemplo
+Quando um usuário clica em um botão, ocultar todos os elementos com o nome da classe "cidade":
+
+<script>
+function myFunction() {
+    var x = document.getElementsByClassName("city");
+    for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    }
+}
+</script>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Usando o atributo id em JavaScript
+JavaScript pode acessar um elemento com um id especificado usando o getElementById()método:
+
+Exemplo
+Use o atributo id para manipular texto com JavaScript:
+
+<script>
+function displayResult() {
+    document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+</body>
+</html>

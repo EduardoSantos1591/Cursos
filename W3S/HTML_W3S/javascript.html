@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML W3Schools</title>
+</head>
+<body>
+
+JavaScript torna páginas HTML mais dinâmico e interativo.
+
+Exemplo
+
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O HTML tag <script>
+
+O <script></script> é usada para definir um script do lado do cliente (JavaScript).
+
+O <script></script> elemento ou contém instruções de script, ou ele aponta para um arquivo de script externo através do src atributo.
+
+usos comuns para JavaScript são de manipulação de imagem, validação de formulário, e as mudanças dinâmicas de conteúdo.
+
+Para selecionar um elemento HTML, JavaScript na maioria das vezes usa o document.getElementById()método.
+
+Este exemplo JavaScript escreve "Olá JavaScript!" em um elemento HTML com id = "demonstração":
+
+Exemplo
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Aqui estão alguns exemplos do que JavaScript pode fazer:
+
+JavaScript pode alterar o conteúdo HTML
+
+<h1>My First JavaScript</h1>
+
+<p>JavaScript can change the content of an HTML element:</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo">This is a demonstration.</p>
+
+<script>
+function myFunction() { 
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+
+
+
+JavaScript pode mudar estilos HTML
+
+<h1>My First JavaScript</h1>
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").style.fontSize = "25px"; 
+    document.getElementById("demo").style.color = "red";
+    document.getElementById("demo").style.backgroundColor = "yellow";        
+}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+
+
+JavaScript pode mudar os atributos HTML
+
+<script>
+function light(sw) {
+    var pic;
+    if (sw == 0) {
+    pic = "pic_bulboff.gif"
+    } else {
+    pic = "pic_bulbon.gif"
+    }
+    document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+O HTML <noscript> Tag
+O <noscript>tag é usada para fornecer um conteúdo alternativo para os usuários que têm roteiros com deficiência no seu navegador ou têm um navegador que não oferece suporte a scripts do lado do cliente:
+
+Exemplo
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+</body>
+</html>

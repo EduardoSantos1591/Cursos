@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML W3Schools</title>
+</head>
+<body>
+
+O elemento de imagem nos permite exibir imagens diferentes para diferentes dispositivos ou tamanhos de tela.
+
+O elemento HTML <picture>
+
+O HTML5 introduziu o <picture>elemento para adicionar mais flexibilidade ao especificar recursos de imagem.
+O <picture>elemento contém vários <source>elementos, cada um referente a diferentes fontes de imagem. Dessa forma, 
+o navegador pode escolher a imagem que melhor se ajusta à exibição e / ou dispositivo atual.
+Cada <source>elemento possui atributos que descrevem quando sua imagem é a mais adequada.
+
+Exemplo
+Mostre imagens diferentes em diferentes tamanhos de tela:
+
+<picture>
+    <source media="(min-width: 650px)" srcset="img_food.jpg">
+    <source media="(min-width: 465px)" srcset="img_car.jpg">
+    <img src="img_girl.jpg">
+</picture>
+
+
+Quando usar o elemento de imagem ?
+
+Existem dois propósitos principais para o <picture>elemento:
+
+1. Largura de banda
+Se você possui uma tela ou dispositivo pequeno, não é necessário carregar um arquivo de imagem grande. 
+O navegador usará o primeiro <source> elemento com valores de atributo correspondentes e ignorará qualquer um dos seguintes elementos.
+
+2. Suporte ao Formato
+Alguns navegadores ou dispositivos podem não suportar todos os formatos de imagem. Ao usar o <picture>elemento,
+você pode adicionar imagens de todos os formatos, e o navegador usará o primeiro formato reconhecido e ignorará qualquer um dos seguintes.
+
+Exemplo
+O navegador usará o primeiro formato de imagem que reconhece:
+
+<picture>
+    <source srcset="img_avatar.png">
+    <source srcset="img_girl.jpg">
+    <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+</body>
+</html>

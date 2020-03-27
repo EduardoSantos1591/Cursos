@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+
+
+    <!-- Eventos -->
+
+    <div id="app">
+        <button onclick="mostraAlerta()">ME pressione</button>
+    </div>
+
+    <br>
+
+    <div id="app01">
+        <button onmouseover="mostraAlerta01()">ME pressione</button>
+    </div>
+
+    <br>
+
+    <div id="app02">
+        <input onblur="mostraAlerta02()"></input>
+    </div>
+
+    <br>
+
+    <script>
+        function mostraAlerta(){
+            alert('Botão foi clicado');
+        }
+
+
+        function mostraAlerta01(){
+            alert('Botão acionado');
+        }
+
+        function mostraAlerta02(){
+            alert('Botão acionado');
+        }
+    </script>
+
+    <!-- End Eventos -->
+
+
+    <!-- Referenciar Elementos -->
+
+    <div id="app03">
+        <input type="text" name="nome01">
+        <button class="botao01">Adicionar</button>
+    </div>
+
+    <br>
+
+    <script>
+        //var inputElement = document.getElementById('nome');
+        //var inputElement = document.getElementsByTagName('input')[0];        
+        //var inputElement = document.getElementsByClassName('nome');
+        //var inputElement = document.querySelector('input[name=nome]');
+        var btnElement = document.querySelector('button.botao01');
+
+        btnElement.onclick = function(){
+            var text = inputElement.value;
+
+            alert(text);
+        }
+
+        console.log(btnElement);
+    </script>
+
+    <!-- End Referenciar Elementos -->
+
+    <!-- Lidando Com Elementos -->
+
+    <div id="app04">
+        <input id="nome02">
+    </div>
+
+    <script>
+
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'http://rocketseat.com.br');
+        linkElement.setAttribute('title', 'Site Rocketseat');
+
+        var textElement = document.createTextNode('Acessar site da Rocketseat');
+        linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector('#app04');
+        containerElement.appendChild(linkElement);
+
+        var inputElement = document.querySelector('#nome02');
+        containerElement.removeChild(inputElement);
+
+    </script>
+
+    <!-- End Lidando Com Elementos  -->
+
+    <!-- Alterando Estilos -->
+
+    <div id="app05">
+        <div class="box"></div>
+    </div>
+
+    <script>
+
+        var boxElement = document.querySelector('.box');
+        boxElement.style.width = 100;
+        boxElement.style.height = 100;
+        boxElement.style.backgroundColor = '#f00';
+
+    </script>
+
+    <!-- End Alterando Estilos -->
+
+</body>
+</html>

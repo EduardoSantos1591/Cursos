@@ -1,0 +1,44 @@
+/*Texto aula 08 e 09
+
+p{
+    color:red;
+    text-align:justify; 
+    text-indent:20px; 
+    line-height:30px; 
+    direction:ltr; 
+    letter-spacing:5px;
+    word-spacing:4px;
+}
+
+h1{
+    text-align:left; 
+    text-shadow:1px 30px red;
+    text-decoration:underline; 
+    text-transform:uppercase;
+}
+
+h2{
+    text-align:right;
+    text-decoration:overline;
+    text-transform:lowercase;
+}
+
+h3{
+    text-align:center;
+    text-decoration:line-through;
+    text-transform:capitalize;
+}
+
+text-indent: Cria um recúo na 1° linha
+line-height: Define a altura das linhas
+direction: Determina a direção do texto usando o rtl(right to left) ou ltr(left to right)
+letter-spacing: Altera o espaçamento entre as letras
+word-spacing: Altera o espaçamento entre as palavras
+text-shadow: Adiciona uma sombra no texto
+Ex: 
+A 1° é a posição horizontal (1px)
+A 2° é a posição vertical (3px) 
+A 3° é opcional é o desfoque (4px)
+A 4° é a cor da sombra (#fff).
+
+*/

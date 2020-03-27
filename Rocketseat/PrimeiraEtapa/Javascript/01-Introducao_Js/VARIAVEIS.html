@@ -1,0 +1,35 @@
+Variaveis armazenam algum tipo de valor.
+No Js não temos a tipagem estatica, ou seja, não precisamos definir o tipo de valor da nossa variavel.
+Variaveis sempre são definidas pela palavra "var"
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+
+    <script>
+        var nome = "Eduardo";                           //String
+        var idade = 17;                                 //Inteiro
+        var peso = 80.5;                                //Float
+        var humano = true;                              //Booleanos
+        var alunos = ['Eduardo', 'Henrique', 'Lucas']   //Vetores
+        
+        var aluno = {                                   //Objetos (variaveis que guardam mais de um valor)
+            nome: alunos[2],
+            idade: '17',
+            peso: '80.5',
+            humano: true
+        };            
+
+        console.log(alunos[1]);               
+        console.log(aluno.nome);
+    </script>
+
+</body>
+</html>

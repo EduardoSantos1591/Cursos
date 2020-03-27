@@ -1,0 +1,54 @@
+
+#box-transicao{
+    height: 300px;
+    width: 300px;
+    background: orange;
+}
+
+#box-transicao:hover{
+    width: 400px;
+    background: black;
+    transition: all 2s;
+}
+
+
+/*Exemplo*/
+
+
+/*transition: background 1s, width 5s ;/*
+
+
+/*animation-name: animacao-box;
+animation-duration: 3s;
+animation-delay: 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;*/
+/*animation: animacao-box 3s 1s infinite alternate*/
+
+
+
+
+/*text-shadow: 10px 10px 2px 20px black;*/
+
+
+
+
+/*#box{
+width: 300px;
+height: 300px;
+background: url("../img/camera.png");
+
+}
+
+#box h1
+{
+background: rgba(255, 255, 255,0);
+border-bottom: 2px solid #ffffff;
+
+}*/
+
+
+
+/*border-radius: 20px ;
+-webkit-border-radius: 20px ;
+-moz-border-radius: 20px ; */

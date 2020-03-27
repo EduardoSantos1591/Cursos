@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML W3Schools</title>
+</head>
+<body>
+
+Uma lista não ordenada começa com a tag. Cada item da lista começa com a tag. <ul> <li>
+Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão:
+
+Exemplo
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Lista HTML não ordenada - Selecionar marcador de item da lista
+A list-style-typepropriedade CSS é usada para definir o estilo do marcador do item de lista:
+
+Value	Description
+disc	Sets the list item marker to a bullet (default)
+circle	Sets the list item marker to a circle
+square	Sets the list item marker to a square
+none	The list items will not be marked
+
+Exemplo - Disco
+<ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Exemplo - Círculo
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Exemplo - Quadrado
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+Exemplo - Nenhum
+<ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+Lista HTML ordenada
+Uma lista ordenada começa com a tag. Cada item da lista começa com a tag. <ol> <li>
+
+Os itens da lista serão marcados com números por padrão:
+
+Exemplo
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+Lista HTML ordenada - o atributo Type
+O typeatributo da tag define o tipo do marcador do item da lista: <ol>
+
+Type	    Description
+type="1"	The list items will be numbered with numbers (default)
+type="A"	The list items will be numbered with uppercase letters
+type="a"	The list items will be numbered with lowercase letters
+type="I"	The list items will be numbered with uppercase roman numbers
+type="i"	The list items will be numbered with lowercase roman numbers
+
+Números:
+<ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+Letras maiúsculas:
+<ol type="A">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+Letras minúsculas:
+<ol type="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+Números romanos maiúsculos:
+<ol type="I">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+Números romanos em minúsculas:
+<ol type="i">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+
+Listas de descrição HTML
+O HTML também suporta listas de descrição.
+
+Uma lista de descrição é uma lista de termos, com uma descrição de cada termo.
+
+A <dl>tag define a lista de descrição, a tag define o termo (nome) e a tag descreve cada termo: <dt> <dd>
+
+Exemplo
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+
+Listas HTML aninhadas
+A lista pode ser aninhada (listas dentro de listas):
+
+Exemplo
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+Contagem da lista de controle
+Por padrão, uma lista ordenada começará a contar a partir de 1. Se você quiser começar a contar a partir de um número especificado, poderá usar o startatributo:
+
+Exemplo
+<ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+Lista Horizontal com CSS
+As listas HTML podem ser estilizadas de várias maneiras diferentes com CSS.
+
+Uma maneira popular é estilizar uma lista horizontalmente, para criar um menu de navegação:
+
+Exemplo
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+Resumo do capítulo
+
+Use o <ul>elemento HTML para definir uma lista não ordenada
+Use a list-style-typepropriedade CSS para definir o marcador do item da lista
+Use o <ol>elemento HTML para definir uma lista ordenada
+Use o typeatributo HTML para definir o tipo de numeração
+Use o <li>elemento HTML para definir um item da lista
+Use o <dl>elemento HTML para definir uma lista de descrição
+Use o <dt>elemento HTML para definir o termo de descrição
+Use o <dd>elemento HTML para descrever o termo em uma lista de descrição
+As listas podem ser aninhadas dentro de listas
+Os itens da lista podem conter outros elementos HTML
+Use a propriedade CSS float:leftou display:inlinepara exibir uma lista horizontalmente
+
+</body>
+</html>

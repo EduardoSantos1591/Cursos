@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Novas Tags Input</title>
+    <script src='main.js'></script>
+
+</head>
+<body>
+
+<form>
+
+    <!-- associar label com os elementos - Boa pratica -->
+
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" placeholder="Digite Seu Nome" required >
+    <br><br>
+
+    <!--Novos inputs e atributos html5-->
+    <!--E-mail-->
+    
+    <label for="E-mail">E-mail</label>
+    <input type="email" id="E-mail" placeholder="Digite Seu E-Mail" required autofocus >
+    <br><br>
+
+    <!--Número-->
+
+    <label for="numero">Número</label>
+    <input type="number" id="numero" min="1" max="100" step="1" placeholder=" Idade" required >
+    <br><br>
+
+    <!--URL-->
+
+    <label for="url">URL</label>
+    <input type="url" id="url" placeholder="Ex: http://"  >
+    <br><br>
+
+    <!--PESQUISAR-->
+
+    <label for="pesquisa">pesquisa</label>
+    <input type="search" id="pesquisa" placeholder="Digite algo"  >
+    <br><br>
+
+    <!--Range-->
+
+    <label for="range">Range</label>
+    <input type="range" id="range" min="10" max="20" value="15" >
+    <br><br>
+
+    <!--Data-->
+
+    <label for="data">Data</label>
+    <input type="date" id="data">
+    <br><br>
+
+    <!--Cor-->
+
+    <label for="cor">Cor</label>
+    <input type="color" id="cor">
+    <br><br>
+
+    <input type="submit" value="enviar">
+
+</form>
+
+</body>
+</html>

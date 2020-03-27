@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Introdução ao Vue JS</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+
+<div id="app">
+
+  <gui-titulo titulo="Formulários"></gui-titulo>
+
+  <h3>Texto: {{texto}}</h3>
+  <p>
+    <input type="text" v-model="texto ">
+  </p>
+
+  <h3>Textarea: {{textarea}}</h3>
+  <p style="white-space: pre-line">{{textarea}}</p>
+  <p>
+    <textarea v-model="textarea" cols="80" rows="8"></textarea>
+  </p>
+
+  <h3>Checkbox:</h3>
+  <input type="checkbox" id="aceitarTermos" v-model="termos" >
+  <label for="aceitarTermos">{{termos}}</label>
+
+  <h3>Multiple Checkboxes: {{notificacoes}}</h3>
+  <p>
+    <input type="checkbox" id="receberEmail" value="email" v-model="notificacoes" >
+    <label for="receberEmail">Receber Email</label> 
+
+    <input type="checkbox" id="receberSMS" value="sms" v-model="notificacoes" >
+    <label for="receberSMS">Receber SMS</label>
+
+    <input type="checkbox" id="receberTelefone" value="tel" v-model="notificacoes" >
+    <label for="receberTelefone">Receber Ligação</label>
+  </p>
+  
+  <h3>Radio: {{sexo}}</h3>
+  <p>
+    <input type="radio" id="masculino" value="M" v-model="sexo" >
+    <label for="masculino">Masculino</label>
+
+    <input type="radio" id="feminino" value="F" v-model="sexo" >
+    <label for="feminino">Feminino</label>
+  </p>
+
+  <h3>Select {{ano}}</h3>
+  <p>
+    <select v-model="ano" >
+      <option disabled value="">Escolha o Ano</option>
+      <option value="2017">Ano 2017</option>
+      <option value="2018">Ano 2018</option>
+      <option value="2019">Ano 2019</option>
+    </select>
+  </p>
+  
+  <h3>Multiple Selects: {{cores}}</h3>
+  <p>
+    <select multiple v-model="cores">
+      <option disabled value="">Escolha as cores</option>
+      <option>Azul</option>
+      <option>Verde</option>
+      <option>Vermelho</option>
+    </select>
+  </p>
+
+  <!-- Ao contrário do v-model padrão em que tudo o é digitado é atualizado na hora, ao utilizar o lazy ele so irá ser atualizado ao clicar fora 
+  da caixa de texto ou em algum botão. É muito util em casos que é necessário fazer um busca -->
+  <h3>Lazy: {{busca}}</h3>
+  <p>
+    <input type="text" v-model.lazy="busca">
+  </p>
+
+  <h3>Number: {{idade}} - Tipo: {{typeof idade}}</h3>
+  <p>
+    <input type="number" v-model.number="idade">
+  </p>
+  
+</div>
+
+
+
+<script type="text/javascript">
+
+  Vue.component('gui-titulo',{
+    props:['titulo'],
+    template:'<h2>{{ titulo }}</h2>'
+  });
+
+
+
+  var app = new Vue({
+    el:"#app",
+    data:{
+      texto:'',
+      textarea:'',
+      termos: false,
+      notificacoes:[],
+      sexo:'M' /*Pode ser null*/,
+      ano:null,
+      cores:null,
+      busca:'',
+      idade:null,
+
+    }
+  });
+
+
+</script>
+
+  </body>
+</html>

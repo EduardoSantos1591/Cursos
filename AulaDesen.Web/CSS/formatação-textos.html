@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formatações De Textos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+
+        p {
+            font-size: 30px ;
+            font-family: "Georgia";
+        }
+
+    .texto{
+        font-size: 20px ; /* px , % , em */
+    }
+    .negrito{
+        font-weight: bold; /*100 até 900 , normal*/   
+    }
+
+.estilo{
+    font-style: italic;
+    /*font-style: oblique;*/
+}
+.texto-padrao{
+    font: bold 40px "Trebuchet MS", Helvetica ,sans-serif; 
+}
+
+.formatacao{
+    /*text-decoration: underline ;*/
+    /*text-decoration: overline ;*/
+    text-decoration: line-through ;
+}
+
+    </style>
+
+</head>
+<body>
+
+    <p class="texto">
+        Lorem ipsum <span class="formatacao"> dolor </span> sit amet, consectetur adipisicing elit. Quisquam perspiciatis necessitatibus dolore!
+        Laudantium veritatis libero vel nulla neque? Odio saepe error officiis iure fuga magni aliquam cum ipsa voluptatem doloribus? 
+    </p>
+
+    <p class="negrito">Conteúdo1</p>
+    <p>Conteúdo2</p>
+    <p class="estilo">Conteúdo3</p> 
+    <p class="texto-padrao">Conteúdo4</p>  
+   
+</body>
+</html>

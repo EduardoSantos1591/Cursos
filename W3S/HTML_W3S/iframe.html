@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML W3Schools</title>
+</head>
+<body>
+
+Um iframe é usado para exibir uma página web dentro de uma página web.
+
+iframe Sintaxe
+Um iframe HTML é definido com a <iframe>tag:
+
+<iframe src="URL"></iframe>
+O src atributo especifica a URL (endereço web) da página quadro embutido.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iframe - Set Altura e Largura
+Use as height e width atributos para especificar o tamanho do iframe.
+
+A altura ea largura são especificadas em pixels por padrão:
+
+Exemplo
+<iframe src="demo_iframe.htm" height="200" width="300"></iframe>
+
+Ou você pode usar CSS para definir a altura ea largura do iframe:
+
+Exemplo
+<iframe src="demo_iframe.htm" style="height:200px;width:300px;"></iframe>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iframe - Retire o Border
+Por padrão, um iframe tem uma borda em torno dela.
+
+Para remover a beira, adicione o style atributo e usar o CSS border propriedade:
+
+Exemplo
+<iframe src="demo_iframe.htm" style="border:none;"></iframe>
+
+Com CSS, você também pode alterar o tamanho, estilo e cor da borda do iframe:
+
+Exemplo
+<iframe src="demo_iframe.htm" style="border:2px solid red;"></iframe>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iframe - alvo para um link
+Um iframe pode ser utilizado como o quadro de destino para um destino.
+
+O target atributo do link deve se referir ao name atributo do iframe:
+
+Exemplo
+<iframe src="demo_iframe.htm" name="iframe_a"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+</body>
+</html>
